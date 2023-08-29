@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">智能系统</string>
+    <string name="text_copyright">Copyright © 2016 Shanghai3h 3H</string>
+
+    <string name="title_activity_welcome">welcome</string>
+    <string name="title_activity_login">login</string>
+    <string name="label_login">登 录</string>
+    <string name="label_username">帐号</string>
+    <string name="label_password">密码</string>
+    <string name="label_setting"><u>网络设置</u></string>
+    <string name="text_username_not_null">帐号不能为空</string>
+    <string name="text_password_not_null">密码不能为空</string>
+    <string name="text_failure_to_login">登录失败</string>
+    <string name="network_login_success">在线登录成功</string>
+    <string name="network_login_failed">在线登录失败,账号或密码错误</string>
+    <string name="not_network_login_success">离线登录成功</string>
+    <string name="not_network_account_or_password_error">离线登录失败，账号或密码错误</string>
+    <string name="first_time_must_network_login">首次必须在线登录</string>
+    <string name="dialog_login">正在登录...</string>
+    <string name="text_setting_data_address">数据服务地址(外网)</string>
+    <string name="text_setting_reserved_data_address">数据服务地址(内网)</string>
+    <string name="text_setting_push_address">推送服务地址(外网)</string>
+    <string name="text_setting_reserved_push_address">推送服务地址(内网)</string>
+    <string name="text_setting_countly_address">系统监控地址</string>
+    <string name="text_system_style">系统风格</string>
+    <string name="text_system_style_grid">九宫格</string>
+    <string name="text_system_style_list">列表</string>
+    <string name="text_image_quality">图片质量</string>
+    <string name="text_image_quality_normal">普通</string>
+    <string name="text_image_quality_high">高清</string>
+    <string name="text_setting_network">网络设置</string>
+    <string name="text_setting_gps">GPS定位方式</string>
+    <string name="text_setting_monit">监控方式</string>
+    <string name="text_apk_install">Apk安装列表</string>
+    <string name="text_setting_leftorright">习惯手操作设置</string>
+    <string name="text_lefthand">左手</string>
+    <string name="text_righthand">右手</string>
+    <string name="text_setting_keep_alive">呼吸包时间设置</string>
+    <string name="text_setting_gps_type">GPS定位方式</string>
+    <string name="text_setting_monitor_type">监控方式</string>
+    <string name="text_setting_update">版本更新</string>
+    <string name="text_setting_automatic">自动</string>
+    <string name="text_system_byhand">手动</string>
+    <string name="text_data_sync">数据同步</string>
+    <string name="text_clearing_history">清除缓存</string>
+    <string name="text_clearing_history_failure">清除缓存失败</string>
+    <string name="text_restoring_factory">恢复出厂设置</string>
+    <string name="text_restoring_failure">恢复出厂设置失败</string>
+    <string name="text_restoring_all">是否恢复出厂设置？</string>
+    <string name="text_version">版本信息</string>
+    <string name="upload_style_all">全部上传</string>
+    <string name="text_setting_singledata_upload">单条上传</string>
+    <string name="download_style_all">全部下载</string>
+    <string name="text_setting">设置</string>
+
+    <string name="text_second">秒</string>
+    <string name="text_minute">分钟</string>
+
+    <string name="text_saving_success">保存成功</string>
+    <string name="text_saving_failure">保存失败</string>
+
+    <string name="stub_name_activity">启动插件ing...</string>
+    <string name="stub_name_povider">插件代理服务</string>
+    <string name="stub_name_service">插件代理服务</string>
+    <string name="service_name_plugin_manager_service">插件管理服务</string>
+    <string name="text_not_authorizing">还未认证，请联网认证</string>
+    <string name="text_failure_to_authorize">认证失败</string>
+    <string name="text_not_config">获取配置文件为空</string>
+    <string name="title_apk_install">应用列表</string>
+    <string name="title_setting">设置</string>
+    <string name="title_main">主界面</string>
+    <string name="text_prompt">提示</string>
+    <string name="text_checking_version">是否检查版本更新？</string>
+    <string name="text_clearing_all">是否清除缓存？</string>
+    <string name="text_downLoad">下载</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="text_download_failure">下载失败</string>
+    <string name="text_install">安装</string>
+    <string name="text_installed">已安装</string>
+    <string name="text_update">更新</string>
+    <string name="text_yes">是</string>
+    <string name="text_version_separator">版本:</string>
+    <string name="text_network_not_connected">网络未连接</string>
+    <string name="text_quit_and_login">请退出系统重新登录</string>
+    <string name="text_exit_system">退出程序</string>
+    <string name="text_if_exit_system">是否退出程序</string>
+    <string name="text_restore_factory_fail_app_must_uninstall">程序没有卸载，导致恢复厂失败</string>
+    <string name="text_permissions_granted_success">授权成功</string>
+    <string name="text_lack_permissions">当前应用缺少必要权限</string>
+    <string name="text_change_user">切换账号</string>
+    <string name="text_if_change_user">是否切换账号？</string>
+    <string name="text_change_user_failure">切换账号失败</string>
+    <string name="text_is_saving">是否保存修改？</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_using_reserved_address">使用内网地址</string>
+    <string name="text_apk_not_uninstall">该应用不能删除</string>
+    <string name="text_is_downloading_newly">是否全新下载？</string>
+
+    <string name='connection_dateFormat'>dd/MM/yy \'at\' HH:mm:ss</string>
+    <string name="connection_connected_to">Connected to</string>
+    <string name="connection_disconnected_from">Disconnected from</string>
+    <string name="connection_unknown_status">Unknown connection status to</string>
+    <string name="connection_connecting_to">Connecting to</string>
+    <string name="connection_disconnecting_from">Disconnecting from</string>
+    <string name="connection_error_connecting_to">An error occured connecting to</string>
+    <!-- Strings that need formatting  -->
+    <string name="messageReceived">Received message %1$s &lt;br/&gt; &lt;small&gt;Topic: %2$s &lt;/small&gt; </string>
+    <string name="timestamp">&lt;br/&gt; &lt;small&gt; %1$s &lt;/small&gt;</string>
+    <string name="notification">%1$s has received %2$s on topic %3$s</string>
+    <string name="toast_pub_success">Published message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_success">Subscribed to %1$s</string>
+    <string name="toast_disconnected">Disconnected</string>
+    <string name="toast_pub_failed">Failed to publish message: %1$s to topic: %2$s</string>
+    <string name="toast_sub_failed">Failed to subscribe to %1$s</string>
+    <string name="connection_lost">%1$s has lost connection to %2$s</string>
+    <string name="failure_disconnect">Disconnect failed.&lt;br/&gt; &lt;small&gt;Reason: %s&lt;/small&gt; </string>
+    <string name="failure_connect">Client failed to connect.&lt;br/&gt; &lt;small&gt;Reason: %s&lt;/small&gt;</string>
+    <string name="client_connected">Client connected successfully</string>
+    <string name="notifyTitle">MQTT Message Received</string>
+    <string name="notifyTitle_connectionLost">MQTT Client Has Lost Connection</string>
+    <string name="text_click_to_detail">触摸查看详情</string>
+
+    <!-- 消息成功率统计： 通道将消息转发给SDK后，SDK通知通道消息已接收到 -->
+    <string name="hwpush_ability_value" translatable="false">successRateAnalytics</string>
+    <string name="text_important_notification">重要通知</string>
+    <string name="text_exit_two_seconds_later">两秒后退出系统，请勿操作！</string>
+    <string name="text_open_gps_and_launch_again">请打开GPS后重新登录！</string>
+    <string name="text_gps_not_opened">请打开GPS！</string>
+    <string name="text_logout">该用户已在其它手机登录，请立即登出系统！</string>
+    <string name="text_quit">再按一次退出程序</string>
+
+    <string name="text_hot_line_sheet">您有一条新的热线工单!</string>
+    <string name="text_work_sheet">您有一条新的表务工单!</string>
+    <string name="text_other_sheet">您有新消息!</string>
+    <string name="text_logout_system">登出系统</string>
+
+    <string name="text_new_sheet">新工单</string>
+    <string name="text_new_message_not_handle">您有新消息未处理，请手动处理！</string>
+    <string name="text_prompt_super_admin_password">提示: 请输入超级管理员账号和密码</string>
+    <string name="text_super_admin_password_error">超级管理员账号或密码错误！</string>
+    <string name="text_app_update">App更新中&#8230;</string>
+    <string name="text_new_message">新消息</string>
+</resources>

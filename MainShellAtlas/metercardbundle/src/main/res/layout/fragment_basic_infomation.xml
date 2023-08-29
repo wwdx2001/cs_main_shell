@@ -1,0 +1,389 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout_basic_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.information.BasicInformationFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/loading_process"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/paddingBottom1"
+        android:paddingLeft="@dimen/paddingLeft2"
+        android:paddingRight="@dimen/paddingRight2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/basic_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_customer_info" />
+        </LinearLayout>
+        <!--用户信息版块-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop2"
+            android:orientation="vertical">
+
+            <!--客户编号-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_customer_id" />
+
+                <TextView
+                    android:id="@+id/txt_bianhao"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+            <!--客户类别-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_customer_type" />
+
+                <TextView
+                    android:id="@+id/txt_leibie"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--册本号-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_volume_id" />
+
+                <TextView
+                    android:id="@+id/txt_cebenhao"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--客户名称-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_huming"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_customer_names" />
+
+                <TextView
+                    android:id="@+id/txt_huming"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--客户地址-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_dizhi"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/customer_address" />
+
+                <TextView
+                    android:id="@+id/txt_dizhi"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--缴费方式-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_jiaofeiFS"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pay_type" />
+
+                <TextView
+                    android:id="@+id/txt_jiaofeiFS"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+            <!--联系电话-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_contact_telephone" />
+
+                <TextView
+                    android:id="@+id/txt_fangDongDH"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--联系人手机-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_fangKeDH"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_contact_mobile_phone" />
+
+                <TextView
+                    android:id="@+id/txt_fangKeDH"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--是否阶梯-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_is_ladder" />
+
+                <TextView
+                    android:id="@+id/txt_jieTi"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--水表信息-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/basic_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_meter_information" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <!--厂家名称-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop2">
+
+                <TextView
+                    android:id="@+id/tv_shuibiaocj"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_manufacturer_name" />
+
+                <TextView
+                    android:id="@+id/txt_shuibiaocj"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--表类型-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_meter_type" />
+
+                <TextView
+                    android:id="@+id/txt_biaoxing"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <!--水表钢印号-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_biaohao"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_water_seal_no" />
+
+                <TextView
+                    android:id="@+id/txt_biaohao"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--口径-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_koujing"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_caliber" />
+
+                <TextView
+                    android:id="@+id/txt_koujing"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--表分类-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_biaoFenLei"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_meter_classification" />
+
+                <TextView
+                    android:id="@+id/txt_biaoFenLei"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+            <!--表位-->
+            <LinearLayout
+                style="@style/information_twice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_biaoWei"
+                    style="@style/information_three_title"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_epitope" />
+
+                <TextView
+                    android:id="@+id/txt_biaoWei"
+                    style="@style/information_three_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--价格信息-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_price_information"
+                style="@style/basic_information_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <!--简号-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/information_twice_title">
+
+                <TextView
+                    android:id="@+id/tv_jiaohaos"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jane"
+                    android:textColor="@color/text_content"
+                    style="@style/information_three_title" />
+
+                <TextView
+                    android:id="@+id/txt_jianhao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/information_three_content"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout></android.support.v4.widget.NestedScrollView></LinearLayout>

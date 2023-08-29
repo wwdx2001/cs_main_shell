@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_0176da</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionOverflowButtonStyle">@style/ToolButton.Overflow</item>
+        <!--<item name="windowActionBar">false</item>-->
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabTextColor">@color/text_darkGrey</item>
+        <item name="tabBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.ToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/ToolButton.Overflow</item>
+    </style>
+
+    <style name="ToolButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_menu_more_overflow</item>
+    </style>
+
+    <!--基本信息，左边的格式-->
+    <style name="text_left_style">
+        <item name="android:width">@dimen/width_100</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingTop">@dimen/padding_4</item>
+        <item name="android:paddingBottom">@dimen/padding_4</item>
+        <item name="android:textColor">@color/color_gray_979797</item>
+    </style>
+
+    <!--基本信息，右边有margin值的格式-->
+    <style name="text_right_margin_style">
+        <item name="android:background">@null</item>
+        <item name="android:drawableBottom">@drawable/edit_text_line</item>
+        <item name="android:layout_marginRight">@dimen/margin_40</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_5</item>
+        <item name="android:paddingTop">@dimen/margin_5</item>
+        <item name="android:paddingBottom">@dimen/margin_5</item>
+        <item name="android:textColor">@color/text_enable</item>
+        <item name="android:minHeight">@dimen/margin_40</item>
+    </style>
+
+    <!--cardView头尾文字样式-->
+    <style name="card_head_style">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/color_gray_666e81</item>
+    </style>
+
+    <!--cardView内容文字样式-->
+    <style name="card_content_style">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_10</item>
+        <item name="android:paddingRight">@dimen/padding_5</item>
+        <item name="android:paddingTop">@dimen/padding_5</item>
+        <item name="android:textColor">@color/color_gray_767676</item>
+    </style>
+
+    <!--基本信息的标题-->
+    <style name="basic_information_title">
+        <item name="android:layout_marginLeft">@dimen/margin_5</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:layout_marginTop">@dimen/padding_5</item>
+    </style>
+
+
+    <style name="information_twice_title">
+        <item name="android:layout_marginLeft">@dimen/marginLeft1</item>
+        <item name="android:layout_marginRight">@dimen/marginRight1</item>
+        <item name="android:layout_marginTop">@dimen/margin_5</item>
+    </style>
+
+    <style name="information_three_title">
+        <item name="android:layout_width">@dimen/width_80</item>
+        <item name="android:textColor">@color/text_content</item>
+        <item name="android:textSize">@dimen/text_size_meduim</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="information_three_content">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_content</item>
+        <item name="android:textSize">@dimen/text_size_meduim</item>
+    </style>
+</resources>

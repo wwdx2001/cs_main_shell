@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.mainshell.dataprovider.greendaoDao'
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    provided 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    /** greendao依赖库 **/
+    //compile 'org.greenrobot:greendao:3.2.2'
+    compile 'org.greenrobot:greendao-generator:3.2.2'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.1'
+
+    provided 'com.sh3h.android:mobileutil:1.0.0@aar'
+    provided 'com.sh3h.android:logger:1.0.0@aar'
+    compile project(':middlewarelibrary')
+    compile project(':DaoCore')
+}

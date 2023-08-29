@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">MeterCardBundle</string>
+    <string name="text_prompt">提示</string>
+    <string name="text_lack_permissions">当前应用缺少必要权限</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="meter_card">MeterCard</string>
+
+    <!--详细信息-->
+    <string name="customer_info">详细信息</string>
+    <string name="label_basic_information">基本信息</string>
+    <string name="label_recent_meter_reading">近期抄表</string>
+    <string name="label_recent_pay">近期缴费</string>
+    <string name="label_arrears_info">欠费信息</string>
+    <string name="label_change_table_info">换表信息</string>
+    <string name="action_update">刷新</string>
+
+    <string name="lable_chaobiaorq">抄表日期</string>
+    <string name="lable_shangcicm">上次抄码</string>
+    <string name="lable_bencicm">本次抄码</string>
+    <string name="label_bencisl">抄见水量</string>
+    <string name="label_chaobiaozt">抄表状态</string>
+
+    <string name="lable_jiaofeirq">缴费日期</string>
+    <string name="lable_zdny">账务年月</string>
+    <string name="lable_sfbh">水费编号</string>
+    <string name="lable_zdje">账单金额</string>
+    <string name="lable_zdwyj">违约金</string>
+    <string name="lable_shishouje">实收金额</string>
+    <string name="label_renminbi">¥&#x000A;</string>
+
+    <string name="lable_zwny">账务年月</string>
+    <string name="lable_chaoci">抄次</string>
+    <string name="lable_shuiliang">水量</string>
+    <string name="lable_je">金额</string>
+
+    <string name="label_change_table_time">换表日期</string>
+    <string name="label_new_table_number">新表表号</string>
+    <string name="label_new_table_meter_reading">新表起码</string>
+    <string name="label_old_table_number">旧表指数</string>
+    <string name="label_change_table_man">换表员</string><!--系统设置-->
+    <string name="label_system_setting">系统设置</string>
+    <string name="text_setting_chaobiao_always">常用抄表</string>
+    <string name="text_setting_chaobiao_limit">抄表期限</string>
+    <string name="text_to">至</string>
+
+    <string name="text_setting_hand_habit">习惯手操作</string>
+    <string name="text_setting_left_hand">左手</string>
+    <string name="text_setting_right_hand">右手</string>
+    <string name="text_setting_upload_log">上传日志</string>
+    <string name="text_setting_version_info">版本信息</string>
+    <string name="text_is_upload_log">是否确定上传日志</string>
+    <string name="text_zhangwuny_time_error">抄表任务已超期，请先删除，再同步</string>
+    <string name="text_wait_for_sync">后台正在处理数据，请稍后重试</string>
+
+    <string name="text_volume">册本:</string>
+    <string name="text_card_id">表号:</string>
+    <string name="text_customer_name">户名:</string>
+    <string name="text_address">地址:</string>
+    <string name="text_telephone">电话:</string>
+
+    <string name="search_result_no_data">查询无结果</string>
+    <string name="search_result">查询结果</string>
+    <string name="search_result_count_unit">条</string>
+    <string name="search_result_separator">/</string>
+    <string name="text_view_hu_ming">户名\u0020:\u0020</string>
+    <string name="text_view_address">地址\u0020:\u0020</string>
+    <string name="text_view_table_number">表卡号\u0020:\u0020</string>
+    <string name="text_view_table_gyh">水表钢印号\u0020:\u0020</string>
+    <!--抄表查询-->
+    <string name="combined_search_activity">抄表查询</string>
+    <string name="text_search">查询</string>
+    <string name="text_customer_info">用户信息</string>
+    <string name="text_customer_id">客户编号\u0020:\u0020</string>
+    <string name="text_customer_type">客户类别\u0020:\u0020</string>
+    <string name="text_volume_id">册本号\u0020:\u0020</string>
+    <string name="text_customer_names">客户名称\u0020:\u0020</string>
+    <string name="customer_address">客户地址\u0020:\u0020</string>
+    <string name="text_pay_type">缴费方式\u0020:\u0020</string>
+    <string name="text_contact_telephone">联系电话\u0020:\u0020</string>
+    <string name="text_contact_mobile_phone">联系人手机\u0020:\u0020</string>
+    <string name="text_is_ladder">是否阶梯\u0020:\u0020</string>
+    <string name="text_meter_information">水表信息</string>
+    <string name="text_manufacturer_name">厂家名称\u0020:\u0020</string>
+    <string name="text_meter_type">表类型\u0020:\u0020</string>
+    <string name="text_water_seal_no">水表钢印号\u0020:\u0020</string>
+    <string name="text_caliber">口径\u0020:\u0020</string>
+    <string name="text_meter_classification">表分类\u0020:\u0020</string>
+    <string name="text_epitope">表位\u0020:\u0020</string>
+    <string name="text_price_information">价格信息</string>
+    <string name="text_jane">简号\u0020:\u0020</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="text_demo">Demo</string>
+</resources>

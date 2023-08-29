@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MainShell.iml" filepath="$PROJECT_DIR$/MainShell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/MainShell-PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/MainShell-PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/MainShell-app.iml" filepath="$PROJECT_DIR$/app/MainShell-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataprovider/MainShell-dataprovider.iml" filepath="$PROJECT_DIR$/dataprovider/MainShell-dataprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datautil/MainShell-datautil.iml" filepath="$PROJECT_DIR$/datautil/MainShell-datautil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chuanshazhuke-MainShell.iml" filepath="$PROJECT_DIR$/chuanshazhuke-MainShell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataprovider/dataprovider.iml" filepath="$PROJECT_DIR$/dataprovider/dataprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datautil/datautil.iml" filepath="$PROJECT_DIR$/datautil/datautil.iml" />
+    </modules>
+  </component>
+</project>

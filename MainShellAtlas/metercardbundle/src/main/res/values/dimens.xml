@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--padding-->
+    <dimen name="paddingBottom1">5dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="paddingLeft2">10dp</dimen>
+    <dimen name="paddingRight2">10dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+
+    <!--margin-->
+    <dimen name="marginTop2">5dp</dimen>
+    <dimen name="marginLeft1">10dp</dimen>
+    <dimen name="marginRight1">10dp</dimen>
+    <dimen name="marginBottom2">5dp</dimen>
+    <dimen name="marginTop_5">5dp</dimen>
+    <dimen name="marginBottom_16">16dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+
+    <!--width-->
+    <dimen name="width_100">100dp</dimen>
+    <dimen name="width_120">120dp</dimen>
+    <dimen name="width6">90dp</dimen>
+    <dimen name="width_80">80dp</dimen>
+
+    <!--height-->
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height3">1dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+
+    <!--text_size-->
+    <dimen name="text_size_meduim">12.5dp</dimen>
+    <dimen name="text_size_xlarge">15.16dp</dimen>
+    <dimen name="text_size_small">11.2dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+
+    <!--radius-->
+    <dimen name="radius_6">6dp</dimen>
+    <dimen name="radius_10">10dp</dimen>
+
+    <!--elevation-->
+    <dimen name="elevation_4">4dp</dimen>
+
+</resources>

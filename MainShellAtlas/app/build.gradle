@@ -1,0 +1,183 @@
+group = 'com.sh3h.android.mainshell'
+version = getEnvValue("versionName", "1.2.0");
+def apVersion = getEnvValue("apVersion", "");
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.taobao.atlas'
+
+//configurations {
+//    providedCompile
+//    all*.exclude group: 'com.android.support', module: 'multidex'
+//}
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    signingConfigs {
+        release {
+            keyAlias 'sh3h_android'
+            keyPassword 'shanghai3h/rd'
+            storeFile file('D:/keystore/sh3h_android_keystore')
+            storePassword 'shanghai3h/rd'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.sh3h.mainshell"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 10
+        versionName version
+        // dex突破65535的限制
+        multiDexEnabled true
+        signingConfig signingConfigs.release
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+            // 默认是umeng的渠道
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+            signingConfig signingConfigs.release
+            ndk {
+                abiFilters "armeabi"
+            }
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            ndk {
+                abiFilters "armeabi"
+            }
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.nostra13.universalimageloader/universal-image-loader/pom.properties'
+        exclude 'META-INF/maven/com.nostra13.universalimageloader/universal-image-loader/pom.xml'
+    }
+
+    productFlavors {
+        umeng {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+        }
+        sh3h {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sh3h"]
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.hamcrest:hamcrest-core:1.3'
+    }
+}
+
+atlas {
+    atlasEnabled true
+
+    tBuildConfig {
+        autoStartBundles = ['com.taobao.firstbundle'] //自启动bundle配置
+        outOfApkBundles = ['metercardbundle']
+    }
+
+    manifestOptions{
+        addAtlasProxyComponents true
+    }
+
+    patchConfigs {
+        debug {
+            createTPatch true
+        }
+    }
+
+    buildTypes {
+        debug {
+            if (apVersion) {
+                baseApDependency "com.sh3h.android.mainshell:AP-debug:${apVersion}@ap"
+                patchConfig patchConfigs.debug
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //testCompile 'junit:junit:4.12'
+
+    //compile 'com.android.support:multidex:1.0.1'
+    provided 'com.android.support:appcompat-v7:25.3.1'
+    provided 'com.android.support:support-annotations:25.3.1'
+    provided 'com.android.support:cardview-v7:25.3.1'
+    provided 'com.android.support:design:25.3.1'
+    provided 'com.afollestad.material-dialogs:core:0.9.4.3'
+    provided 'me.imid.swipebacklayout.lib:library2:1.1.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.google.dagger:dagger:2.10'
+    apt 'com.google.dagger:dagger-compiler:2.10'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    provided 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    provided 'com.sh3h.android:itemtouchhelper:1.0.0@aar'
+    provided 'com.squareup.picasso:picasso:2.5.2'
+
+    // baidu location
+    compile files('libs/locSDK_6.23.jar')
+
+    // umeng & huawei
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(':PushSDK')
+    compile(name: 'HMS-SDK-2.4.0.300', ext: 'aar')
+
+    // taobao
+    compile('com.taobao.android:atlas_core:5.0.7@aar') {
+        transitive = true
+    }
+    compile 'com.taobao.android:atlasupdate:1.1.4.7@aar'
+    compile 'com.alibaba:fastjson:1.1.45.android@jar'
+
+    compile project(':datautil')
+    bundleCompile project(':metercardbundle')
+}
+
+String getEnvValue(key, defValue) {
+    def val = System.getProperty(key);
+    if (null != val) {
+        return val;
+    }
+    val = System.getenv(key);
+    if (null != val) {
+        return val;
+    }
+    return defValue;
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name.contains("DebugAndroidTest")) {
+        task.setEnabled(false);
+    }
+}

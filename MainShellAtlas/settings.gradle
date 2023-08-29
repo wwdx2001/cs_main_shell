@@ -1,0 +1,2 @@
+include ':app', ':dataprovider', ':datautil', ':PushSDK', ':metercardbundle', ':middlewarelibrary'
+include ':dataprovider2', ':localprovider2', ':DaoCore', ':greendao-api'

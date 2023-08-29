@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DaoCore/DaoCore.iml" filepath="$PROJECT_DIR$/DaoCore/DaoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MainShellAtlas.iml" filepath="$PROJECT_DIR$/MainShellAtlas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataprovider/dataprovider.iml" filepath="$PROJECT_DIR$/dataprovider/dataprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataprovider2/dataprovider2.iml" filepath="$PROJECT_DIR$/dataprovider2/dataprovider2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datautil/datautil.iml" filepath="$PROJECT_DIR$/datautil/datautil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendao-api/greendao-api.iml" filepath="$PROJECT_DIR$/greendao-api/greendao-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/localprovider2/localprovider2.iml" filepath="$PROJECT_DIR$/localprovider2/localprovider2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metercardbundle/metercardbundle.iml" filepath="$PROJECT_DIR$/metercardbundle/metercardbundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middlewarelibrary/middlewarelibrary.iml" filepath="$PROJECT_DIR$/middlewarelibrary/middlewarelibrary.iml" />
+    </modules>
+  </component>
+</project>

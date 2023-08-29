@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statisticViewPager_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_apk_installed"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:layout_marginTop="@dimen/marginTop_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/rl_apk_install"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_apk_install"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_qianfeixx"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/iv_apk_install"
+                android:layout_toRightOf="@id/iv_apk_install"
+                android:text="@string/title_apk_install"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_install_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_style"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_style_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_style_l"
+                android:layout_toRightOf="@id/fs_iv_style_l"
+                android:text="@string/text_system_style"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_style_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_style_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_style_r"
+                android:layout_toStartOf="@id/fs_sw_style_r"
+                android:text="@string/text_system_style_grid"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_image_quality"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_image_quality"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_quality_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_kehuziliao02"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_quality_l"
+                android:layout_toRightOf="@id/fs_iv_quality_l"
+                android:text="@string/text_image_quality"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_quality_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_quality_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_quality_r"
+                android:layout_toStartOf="@id/fs_sw_quality_r"
+                android:text="@string/text_image_quality_normal"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_network"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_network_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_qianfeixx"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_network_l"
+                android:layout_toRightOf="@id/fs_iv_network_l"
+                android:text="@string/text_setting_network"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_network_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_gps"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_gps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_gps"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_qianfeixx"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_gps"
+                android:layout_toRightOf="@id/fs_iv_gps"
+                android:text="@string/text_setting_gps"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_period_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_monit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_monit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_monit"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_qianfeixx"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_monit"
+                android:layout_toRightOf="@id/fs_iv_monit"
+                android:text="@string/text_setting_monit"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_monit_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_keep_alive"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_keep_alive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/text_setting_keep_alive"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_keep_alive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/height_1"-->
+    <!--android:layout_marginEnd="@dimen/marginRight_10"-->
+    <!--android:layout_marginLeft="@dimen/marginLeft_10"-->
+    <!--android:layout_marginRight="@dimen/marginRight_10"-->
+    <!--android:layout_marginStart="@dimen/marginLeft_10"-->
+    <!--android:background="@color/divider_line"-->
+    <!--android:visibility="gone"/>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_data_sync"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_data_sync"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/text_data_sync"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_data_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_data_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_data_sync"
+                android:layout_toStartOf="@id/fs_sw_data_sync"
+                android:text="@string/text_setting_automatic"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/height_1"-->
+    <!--android:layout_marginEnd="@dimen/marginRight_10"-->
+    <!--android:layout_marginLeft="@dimen/marginLeft_10"-->
+    <!--android:layout_marginRight="@dimen/marginRight_10"-->
+    <!--android:layout_marginStart="@dimen/marginLeft_10"-->
+    <!--android:background="@color/divider_line" />-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_singledata_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_singledata_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/text_setting_singledata_upload"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_singledata_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_singledata_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_singledata_upload"
+                android:layout_toStartOf="@id/fs_sw_singledata_upload"
+                android:text="@string/text_yes"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_upload_all"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_upload_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/upload_style_all"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_upload_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_upload_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_upload_all"
+                android:layout_toStartOf="@id/fs_sw_upload_all"
+                android:text="@string/text_yes"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_download_all"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_download_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/download_style_all"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_download_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_download_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_download_all"
+                android:layout_toStartOf="@id/fs_sw_download_all"
+                android:text="@string/text_yes"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_change_user"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:layout_marginTop="@dimen/margin_top_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_change_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_change_user"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_change_user"
+                android:layout_toRightOf="@id/fs_iv_change_user"
+                android:text="@string/text_change_user"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_clearing_history"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_clearing_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_clearing_history_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_clearing_history_l"
+                android:layout_toRightOf="@id/fs_iv_clearing_history_l"
+                android:text="@string/text_clearing_history"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_restoring_factory"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_restoring_factory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_restoring_factory_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_restoring_factory_l"
+                android:layout_toRightOf="@id/fs_iv_restoring_factory_l"
+                android:text="@string/text_restoring_factory"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_update"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:text="@string/text_setting_update"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <Switch
+                android:id="@+id/fs_sw_update_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10" />
+
+            <TextView
+                android:id="@+id/fs_tv_update_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_5"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_sw_update_r"
+                android:layout_toStartOf="@id/fs_sw_update_r"
+                android:text="@string/text_setting_automatic"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_version"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:layout_marginBottom="@dimen/marginBottom_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_version"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_version_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_version_l"
+                android:layout_toRightOf="@id/fs_iv_version_l"
+                android:text="@string/text_version"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:id="@+id/fs_iv_version_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+
+            <TextView
+                android:id="@+id/fs_tv_version_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_5"
+                android:layout_toLeftOf="@id/fs_iv_version_r"
+                android:layout_toStartOf="@id/fs_iv_version_r"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:background="@color/divider_line"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fs_cv_exit_system"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_marginBottom="@dimen/marginBottom_10"
+        android:layout_marginEnd="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginStart="@dimen/marginLeft_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/radius_0"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/fs_rl_exit_system"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fs_iv_exit_system_l"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/height_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_btn_grid"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginStart="@dimen/marginLeft_10"
+                android:layout_toEndOf="@id/fs_iv_exit_system_l"
+                android:layout_toRightOf="@id/fs_iv_exit_system_l"
+                android:text="@string/text_exit_system"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginRight_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_next2" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

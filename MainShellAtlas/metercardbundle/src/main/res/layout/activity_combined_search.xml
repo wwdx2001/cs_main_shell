@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sh3h.metercard.bundle.ui.search.CombinedSearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/customer_info_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_left_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_volume" />
+
+        <EditText
+            android:id="@+id/edit_text_volume"
+            style="@style/text_right_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_left_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_card_id" />
+
+        <EditText
+            android:id="@+id/edit_text_card_id"
+            style="@style/text_right_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_left_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_customer_name" />
+
+        <EditText
+            android:id="@+id/edit_text_customer_name"
+            style="@style/text_right_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_left_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_address" />
+
+        <EditText
+            android:id="@+id/edit_text_address"
+            style="@style/text_right_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_left_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_telephone" />
+
+        <EditText
+            android:id="@+id/edit_text_telephone"
+            style="@style/text_right_margin_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_search_result"
+        android:layout_width="@dimen/width_120"
+        android:layout_height="@dimen/margin_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/view_border"
+        android:gravity="center"
+        android:text="@string/text_search"
+        android:textColor="@color/color_gray_5b5b5b"
+        android:textSize="@dimen/text_size_18" />
+</LinearLayout>

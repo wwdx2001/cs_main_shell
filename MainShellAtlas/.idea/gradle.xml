@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DaoCore" />
+            <option value="$PROJECT_DIR$/PushSDK" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dataprovider" />
+            <option value="$PROJECT_DIR$/dataprovider2" />
+            <option value="$PROJECT_DIR$/datautil" />
+            <option value="$PROJECT_DIR$/greendao-api" />
+            <option value="$PROJECT_DIR$/localprovider2" />
+            <option value="$PROJECT_DIR$/metercardbundle" />
+            <option value="$PROJECT_DIR$/middlewarelibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

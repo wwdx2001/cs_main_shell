@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0176da</color>
+    <color name="colorPrimaryDark">#0176da</color>
+    <color name="text_darkGrey">#424C55</color>
+    <color name="white">#ffffff</color>
+    <color name="color_0176da">#0176da</color>
+
+    <color name="text_content">#305b87</color>
+    <color name="bg_color_transparent">#0000</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="background_clear">#00000000</color>
+    <!-- 背景，淡蓝色，抄表任务，册本列表，基本信息 -->
+    <color name="background_listitem">#e3eff9</color>
+    <!-- 列表内容，日期字段颜色 -->
+    <color name="text_datetime">#305b87</color>
+    <!-- 列表内容，字体颜色 -->
+    <color name="text_item">#0eb185</color>
+    <!-- 背景，深蓝色，备注行颜色 -->
+    <color name="background_listitem_dark">#4f78a1</color>
+    <!-- 备注字段颜色 -->
+    <color name="text_desc">#ccdeff</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="item_color_title">#666E81</color>
+    <!--点击前的颜色-->
+    <color name="color_gray_979797">#979797</color>
+    <!--enabled：false的字体-->
+    <color name="color_gray_5b5b5b">#5b5b5b</color>
+    <!-- 分割线的颜色 -->
+    <color name="color_gray_d2d2d2">#d2d2d2</color>
+    <!--cardView中间字体-->
+    <color name="color_gray_767676">#767676</color>
+    <!--cardView头部字体-->
+    <color name="color_gray_666e81">#666e81</color>
+</resources>

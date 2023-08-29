@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string-array name="main_names_wenzhou">-->
+        <!--<item>抄表任务</item>-->
+        <!--<item>临时册本</item>-->
+        <!--&lt;!&ndash;<item>册本检查</item>&ndash;&gt;-->
+        <!--<item>组合查询</item>-->
+        <!--&lt;!&ndash;<item>地图</item>&ndash;&gt;-->
+    <!--</string-array>-->
+
+    <integer-array name="keep_alive_items">
+        <item>0</item>
+        <item>5000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+    </integer-array>
+
+    <string-array name="setting_gpstype_key">
+        <item>不使用</item>
+        <item>系统定位</item>
+        <item>百度定位</item>
+    </string-array>
+
+    <string-array name="setting_gpstype_value">
+        <item>none</item>
+        <item>system</item>
+        <item>baidu</item>
+    </string-array>
+    
+    <string-array name="setting_monitortype_key">
+        <item>不使用</item>
+        <!--<item>countly</item>-->
+        <item>umeng</item>
+    </string-array>
+
+    <string-array name="setting_monitortype_value">
+        <item>none</item>
+        <!--<item>countly</item>-->
+        <item>umeng</item>
+    </string-array>
+</resources>
