@@ -82,6 +82,7 @@ public class MainActivity extends ParentActivity
     private static final String NEW_TASK_ACTIVITY = "newTaskActivity";
     private static final String PHOTO_QUALITY = "photoQuality";
     private static final String NETWORK = "network";
+    private static final String IS_HISTORY = "isHistory";
 
     /**
      * GridView Vertical Spacing
@@ -426,6 +427,11 @@ public class MainActivity extends ParentActivity
             intent.putExtra(DEPARTMENT_ID, mMainPresenter.getDepartmentId());
             intent.putExtra(ROLES, !TextUtil.isNullOrEmpty(mMainPresenter.getRoles()) ? mMainPresenter.getRoles() : component.getRoles());
             intent.putExtra(ACCESS_TOKEN, mMainPresenter.getAccessToken());
+            if (component.getOrder() == 125) { //管网工单
+                intent.putExtra(IS_HISTORY, false);
+            } else if (component.getOrder() == 126) { //管网工单历史
+                intent.putExtra(IS_HISTORY, true);
+            }
             if (!TextUtil.isNullOrEmpty(component.getParam())) {
                 intent.putExtra(PARAMS, component.getParam());
             }
