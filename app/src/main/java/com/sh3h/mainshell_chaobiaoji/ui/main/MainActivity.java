@@ -427,9 +427,9 @@ public class MainActivity extends ParentActivity
             intent.putExtra(DEPARTMENT_ID, mMainPresenter.getDepartmentId());
             intent.putExtra(ROLES, !TextUtil.isNullOrEmpty(mMainPresenter.getRoles()) ? mMainPresenter.getRoles() : component.getRoles());
             intent.putExtra(ACCESS_TOKEN, mMainPresenter.getAccessToken());
-            if (component.getOrder() == 125) { //管网工单
+            if (component.getName().equals("管网工单")) { //管网工单
                 intent.putExtra(IS_HISTORY, false);
-            } else if (component.getOrder() == 126) { //管网工单历史
+            } else if (component.getName().equals("管网历史工单")) { //管网历史工单
                 intent.putExtra(IS_HISTORY, true);
             }
             if (!TextUtil.isNullOrEmpty(component.getParam())) {

@@ -24,8 +24,8 @@ android {
 //        versionCode 68
 //        versionName '1.6.8'
         //川沙工单
-        versionCode 4
-        versionName '1.1.4'
+        versionCode 6
+        versionName '1.1.6'
         // dex突破65535的限制
         multiDexEnabled true
         signingConfig signingConfigs.release
